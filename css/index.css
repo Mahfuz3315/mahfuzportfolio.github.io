@@ -1,0 +1,106 @@
+* {
+    margin: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --name_color: rgb(85, 56, 200);
+    --name_font1: "comforter", cursive;
+    --name_font2: "sofia", cursive;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/*Navigation Bar*/
+
+#nav > #nav_menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    background-color: whitesmoke;
+}
+
+#nav > ul > .icon {
+    display: inline;
+    padding-right: 0px;
+}
+
+#nav > ul > .name1 {
+    text-decoration: none;
+    display: inline;
+    color: var(--name_color);
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#nav > ul > .name1 > a:link {
+    text-decoration: none;
+    display: inline;
+    color: var(--name_color);
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#nav > ul > .name1 > a:hover {
+    color: var(--name_color);
+}
+
+#nav > ul > .name {
+    display: inline;
+    padding-left: 510px;
+    color: var(--name_color);
+    font-family: var(--name_font1);
+    font-size: 30px;
+}
+
+#nav > ul > .nav_element {
+    float: right;
+    display: inline;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-right: 25px;
+}
+.nav_element > a {
+    text-decoration: none;
+}
+
+#nav > ul > .nav_element:hover {
+    color: var(--name_color);
+}
+
+/*About*/
+.section_1 {
+    margin: 100px;
+    padding: 100px;
+    display: flex;
+}
+
+.about > img {
+    padding-right: 100px;
+    height: 400px;
+    width: 400px;
+}
+
+.section_1 {
+    font-family: sans-serif;
+}
+ .section_1 .info{
+    padding: 50px;
+ }
+
+.section_1 .link:link {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+
+.section_1 .link:hover {
+    color: rgb(85, 56, 200);
+}
+

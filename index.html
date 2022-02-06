@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Webpage</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index2.css">
+    <link rel="shortcut icon" href="./img/brain.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Sofia&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div id="nav">
+        <ul id="nav_menu">
+            <li class="icon"><img src="./img/leader.png" alt="king"></li>
+            <li class="name1"><a class="piazza" href="https://piazza.com/class/kyzuq0kk9r460x" target="_blank">CSE
+                    391</a></li>
+            <li class="name">Md Mahfuzur Rahman Hasib</li>
+            <li class="nav_element"><a href="#about-section">About</a></li>
+            <li class="nav_element"><a href="#link-section">Socials</a></li>
+            <li class="nav_element"><a href="#hobby-section">Hobbies</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <section id="about-section" class="section_1">
+        <div class="about">
+            <img src="./img/plushie.jpg" alt="a mahfuz">
+        </div>
+
+        <div class="text">
+            <p class="info">
+            <h1>About</h1>
+            <br>
+            My name is <b>Mahfuzur Rahman Hasib</b>. I am a student at <a class="link" href="https://www.bracu.ac.bd/"
+                target="_blank"><b>Brac University</b></a>. I am currently
+            in my 10th semester. I am studying computer science and engineering. I live in Dhaka and I was born and
+            raised here. I finished my college
+            in 2018 from <a class="link" href="https://rajukcollege.net/" target="_blank"><b>Rajuk Uttara Model
+                    College</b></a>.
+            <br>
+            <br>
+            One of most favourite quote is <br>
+            "Don't ever let someone tell you that you cant do something. Not even me. You got a dream, you gotta protect
+            it. When people can't
+            do something themselves, they're gonna tell you that you can't do it. You want something, go get it.
+            Period". <br>
+            - Will Smith (The Pursuit of Happiness)
+            </p>
+        </div>
+    </section>
+
+    <section id="hobby-section" class="section2">
+
+        <h1>Hobbies</h1>
+        <br>
+        <p class="text2">
+        <h3>Illustration</h3><br>
+        I have been doing illustrations since 2020. I started it during the lockdown of covid-19 and I have been working
+        on it ever since.
+        Here are some of my illustrations for showcase.
+        </p><br><br>
+
+        <div class="showcase1">
+            <img class="img1" src="./img/Bersek.jpg" alt="berserk">
+            <img class="img2" src="./img/Dreaming Astronout.jpg" alt="astro">
+        </div>
+        <div class="showcase2">
+            <img class="img3" src="./img/Evangelion.jpg" alt="Evangelion">
+            <img class="img4" src="./img/KAIDO.jpg" alt="KAIDO">
+        </div>
+        <br><br><br>
+        <p class="text3">
+        <h3>Basketball</h3><br>
+        I have been into basketball since 6th grade. I played for my college in National intra college Basketball
+        Tournament in 2017. I have
+        also played for my University team as the starting five in 2020. Basketball is my most favourite sport and I
+        really enjoy both playing it and
+        watching it.
+        </p><br><br><br>
+
+        <h1>Favourite pastime activities</h1><br>
+        <ul>
+            <li>watching anime</li>
+            <li>Playing Video games</li>
+            <li>Reading books</li>
+            <li>Watching movies</li>
+        </ul>
+
+        <br><br><br>
+
+        <h1>Favourite Movies</h1>
+        <br><br>
+        <table class="movie">
+            <tr>
+              <th>Movie name</th>
+              <th>Year</th>
+              <th>IMDB rating</th>
+            </tr>
+            <tr>
+              <td>Intersteller</td>
+              <td>2014</td>
+              <td>8.6</td>
+            </tr>
+            <tr>
+              <td>inception</td>
+              <td>2010</td>
+              <td>8.8</td>
+            </tr>
+            <tr>
+              <td>Shutter Island</td>
+              <td>2010</td>
+              <td>8.2</td>
+            </tr>
+            <tr>
+              <td>Jojo Rabbit</td>
+              <td>2019</td>
+              <td>7.9</td>
+            </tr>
+            <tr>
+              <td>The book of Henry</td>
+              <td>2017</td>
+              <td>6.6</td>
+            </tr>
+            <tr>
+              <td>The Dark Knight</td>
+              <td>2008</td>
+              <td>9.0</td>
+            </tr>
+            <tr>
+                <td>Eternal Sunshine of the Spotless Mind</td>
+                <td>2004</td>
+                <td>8.3</td>
+              </tr>
+          </table>
+
+    </section>
+    <br><br><br><br>
+
+    <h3 class="title2">Social contacts</h3>
+    <section id="link-section" class="section3">
+        <a href="https://www.instagram.com/_m_fuzed_/" target="_blank"><img class="logo" src="./img/instagram.png"
+                alt="instagram"></a>
+        <a href="https://www.facebook.com/m.fuzed/" target="_blank"><img class="logo" src="./img/facebook.png"
+                alt="facebook"></a>
+        <a href="https://pin.it/3uA7Yzf" target="_blank"><img class="logo" src="./img/pinterest.png"
+                alt="pinterest"></a>
+    </section>
+
+
+</body>
+
+<footer class="footer">
+
+    <script>
+        window.onload = () => {
+            fetch(document.location.href)
+                .then(res => {
+                    const last_edit = res.headers.get("last-modified")
+                    document.getElementById("js").innerHTML = "Last Modified: " + last_edit
+                })
+        }
+    </script>
+
+    <p>391 Assignment | Mahfuz | 19101478</p>
+
+    <p id="js"></p>
+
+</footer>
+
+</html>
